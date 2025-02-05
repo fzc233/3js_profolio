@@ -1,9 +1,25 @@
 import {useState} from "react";
+import {navLinks} from "../constants/index.js";
 const NavItems = ()=> {
     return (
-        <div></div>
+        <ul className="nav-ul">
+            {navLinks.map(({id,href,name}) =>(
+                <li key={id} className="nav-li">
+<a href={href} className="nav-li_a" onClick={()=>{}}>{name}</a>
+                </li>
+            ))}
+        </ul>
     )
 }
+/**
+ * Navbar component that provides a responsive navigation header.
+ *
+ * The component contains a logo link and a toggleable menu button for small screens.
+ * The menu visibility is controlled by the `isOpen` state, which is toggled by the `toggleMenu` function.
+ *
+ * Returns:
+ *  A header element containing the navigation items and a toggle button.
+ */
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const  toggleMenu = () => {
@@ -24,6 +40,11 @@ export const Navbar = () => {
                         <NavItems/>
                     </nav>
                 </div>
+            </div>
+            <div className={`nav-sidebar ${isOpen ? 'max-h-screen ' : 'max-h-0'}`}>
+                <nav className="p-5">
+                    <NavItems/>
+                </nav>
             </div>
         </header>
     )
