@@ -5,6 +5,9 @@ import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
 import Target from "../components/target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
+import HW from "../components/HW.jsx";
+import Rings from "../components/Rings.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth:400})
@@ -35,7 +38,11 @@ const Hero = () => {
                             rotation={[0,0,0]}
                             position={sizes.deskPosition}/>
                         <group>
+                            <Rings position={sizes.ringPosition}/>
                             <Target position={sizes.targetPosition}/>
+                            <ReactLogo  position={sizes.reactLogoPosition}/>
+                            <HW position={sizes.hwPosition}/>
+
                         </group>
 
                     </Suspense>
