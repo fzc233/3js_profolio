@@ -37,8 +37,7 @@ const Hero = () => {
                             // rotation={[0,0,0]}
                             // position={[0,-4, 2]}
                             rotation={[0,0,0]}
-                            position={sizes.deskPosition}/>
-                        </HeroCamera>
+                            position={sizes.deskPosition}/></HeroCamera>
                         <group>
                             <Rings position={sizes.ringPosition}/>
                             <Target position={sizes.targetPosition}/>
