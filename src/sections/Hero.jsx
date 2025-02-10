@@ -15,6 +15,7 @@ const Hero = () => {
     const isTablet = useMediaQuery({minWidth:768,maxWidth:1024})
     const isMobile = useMediaQuery({ maxWidth:768 })
     const sizes = calculateSizes(isSmall, isMobile, isTablet)
+    console.log("Ring Position on Render:", sizes.ringPosition);
 
     return (
         <section className="min-h-screen w-full flex flex-col relative">
@@ -28,25 +29,18 @@ const Hero = () => {
                 {/*<Leva/>*/}
             {/* use 3js*/}
                 <Canvas className="w-full h-full" camera={{ position: [0, 5, 10], fov: 50 }} >
-
                     <Suspense fallback={<CanvasLoader/>}>
                         <ambientLight intensity={1.5}/>
                         <directionalLight position={[10,10,10]} intensity={1}/>
-                        <HeroCamera>  <HackerRoom //scale={0.1}
-                            scale={sizes.deskScale}
-                            // rotation={[0,0,0]}
-                            // position={[0,-4, 2]}
-                            rotation={[0,0,0]}
-                            position={sizes.deskPosition}/>
+                        <HeroCamera>
+                            <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} />
                         </HeroCamera>
                         <group>
-                            <Rings position={sizes.ringPosition}/>
-                            <Target position={sizes.targetPosition}/>
-                            <ReactLogo  position={sizes.reactLogoPosition}/>
+                            <Target position={sizes.targetPosition} />
+                            <ReactLogo position={sizes.reactLogoPosition} />
+                            <Rings position={sizes.ringPosition} /> {/* ✅ 确保 Rings 真的被渲染 */}
                             <HW position={sizes.hwPosition}/>
-                        {/*    maybe more animation?*/}
                         </group>
-
                     </Suspense>
                 </Canvas>
             </div>

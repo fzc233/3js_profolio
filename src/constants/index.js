@@ -249,13 +249,20 @@ export const myProjects = [
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
         deskScale: isSmall ? 0.14 : isMobile ? 0.25 : 0.3,
-        deskPosition: isMobile ? [-1.5,-16,-2] : [-1.5,-16,-2],
-        hwPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+        deskPosition: isMobile ? [-1.5, -16, -2] : [-1.5, -25, -1],
+
+        hwPosition: isSmall ? [4, -10, 0] : isMobile ? [9, -12, 0] : isTablet ? [9, -12, 0] : [9, -14, 0],
+
         reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-        ringPosition: isSmall ? [-7, 6, 0] : isMobile ? [-10, 6, 0] : isTablet ? [-12, 6, 0] : [-16, 6, 0], // 从 -24 改成 -15
-        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+
+        ringPosition: isSmall ? [4, -10, 0] : isMobile ? [9, -12, 0] : isTablet ? [9, -12, 0] : [9, -14, 0],
+
+
+        targetPosition: isSmall ? [-8, -8, -10] : isMobile ? [-10, -8, -10] : isTablet ? [-12, -6, -10] : [-17, -10, -10],
     };
 };
+
+
 
 export const workExperiences = [
     {

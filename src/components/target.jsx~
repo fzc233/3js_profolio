@@ -17,10 +17,12 @@ const Target = (props) => {
             yoyo: true,
         });
     });
+
     return (
-       <mesh {...props} ref={targetRef}>
-           <primitive object={scene} />
-       </mesh>
-    )
-}
-export default Target
+        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
+            <primitive object={scene} />
+        </mesh>
+    );
+};
+
+export default Target;
