@@ -25,7 +25,7 @@ const Hero = () => {
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">Hi mate, I am Conor
                     <span className="waving">🤖</span>
                 </p>
-                <p className="hero_tag text-gray_gradient">Welcome to my Profolio</p>
+                <p className="hero_tag text-gray_gradient">Welcome to Conor's Profolio</p>
             </div>
             <div className="w-full h-full absolute inset-0">
                 {/*<Leva/>*/}
