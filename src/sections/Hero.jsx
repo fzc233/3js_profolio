@@ -1,5 +1,5 @@
 import {Canvas} from "@react-three/fiber";
-import HackerRoom from "../components/HackerRoom.jsx";
+//import HackerRoom from "../components/HackerRoom.jsx";
 import {Suspense} from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
@@ -11,6 +11,7 @@ import Rings from "../components/Rings.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Cube from "../components/Cube.jsx";
 import Button from "../components/Button.jsx";
+import HackerRoom2 from "../components/HackerRoom2.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth:400})
@@ -36,7 +37,7 @@ const Hero = () => {
                         <ambientLight intensity={1.5}/>
                         <directionalLight position={[10, 10, 10]} intensity={1}/>
                         <HeroCamera>
-                            <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition}/>
+                            <HackerRoom2 scale={sizes.deskScale} position={sizes.deskPosition}/>
                         </HeroCamera>
                         <group>
                             <Cube position={sizes.cubePosition}/>
