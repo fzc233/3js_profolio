@@ -9,21 +9,23 @@ import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
 import Button from '../components/Button.jsx';
 import Target from '../components/Target.jsx';
-import HW from '../components/HW.jsx';
-import CanvasLoader from '../components/CanvasLoader.jsx';
+import CanvasLoader from '../components/Loading.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
-import HackerRoom from '../components/HackerRoom.jsx'; // ✅ 保持 `HackerRoom`
+import  HackerRoom  from '../components/HackerRoom.jsx';
+import HW from "../components/HW.jsx";
 
 const Hero = () => {
-    // ✅ 继续使用 `calculateSizes`
-    const isSmall = useMediaQuery({ maxWidth: 400 });
+    // Use media queries to determine screen size
+    const isSmall = useMediaQuery({ maxWidth: 440 });
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
+
     return (
-        <section className="relative min-h-[600px] w-full flex flex-col" id="home">
+        <section className="relative min-h-screen w-full flex flex-col justify-between" id="home">
             <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
                     Hi mate, I am Conor <span className="waving">🤖</span>
@@ -32,9 +34,9 @@ const Hero = () => {
             </div>
 
             <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full  pointer-events-auto">
+                <Canvas className="w-full h-full">
                     <Suspense fallback={<CanvasLoader/>}>
-                        <Leva hidden/> {/* ✅ 隐藏 UI 控制面板 */}
+                        <Leva hidden/>
                         <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
 
                         <HeroCamera isMobile={isMobile}>
@@ -49,8 +51,8 @@ const Hero = () => {
                             <HW position={sizes.hwPosition}/>
                         </group>
 
-                        <ambientLight intensity={1.5}/>
-                        <directionalLight position={[10, 10, 10]} intensity={1}/>
+                        <ambientLight intensity={1}/>
+                        <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
                 </Canvas>
             </div>

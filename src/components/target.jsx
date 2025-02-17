@@ -23,7 +23,7 @@ const Target = (props) => {
     });
 
     return (
-        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
+        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={2}>
             <primitive object={scene} />
         </mesh>
     );
