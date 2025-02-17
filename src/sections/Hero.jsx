@@ -20,9 +20,7 @@ const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 400 });
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
-
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
-    console.log("Ring Position on Render:", sizes.ringPosition);
 
     return (
         <section className="relative min-h-[600px] w-full flex flex-col" id="home">
@@ -34,7 +32,7 @@ const Hero = () => {
             </div>
 
             <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full">
+                <Canvas className="w-full h-full  pointer-events-auto">
                     <Suspense fallback={<CanvasLoader/>}>
                         <Leva hidden/> {/* ✅ 隐藏 UI 控制面板 */}
                         <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
