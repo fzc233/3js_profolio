@@ -1,3 +1,5 @@
+import Globe from "react-globe.gl";
+
 const About = () => {
     console.log("Rendering About component...");
     return (
@@ -10,6 +12,22 @@ const About = () => {
                             <p className="grid-headtext">Hello,I am Conor</p>
                             <p className="grid-subtext">Over 3 years of experience in web development, I have honed my
                                 skills in frontend and backend development like ReactJS and .Net</p>
+                        </div>
+                    </div>
+                    <div className="col-span-1 xl: row-span-3">
+                        <div className="grid-container">
+                            <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain"/>
+                            <div>
+                                <p className="grid-headtext">Tech Stack</p>
+                                <p className="grid-subtext">I specialize in JavaScript/TypeScript with a focus on React and Next.js. I also have experience with Java and C# development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 xl: row-span-4">
+                        <div className="grid_container">
+                            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+                                <Globe height={326} width={326} backgroundColor="rgba(0,0,0,0)" backgroundImageOpacity={0.5} showAtmosphere showGraticules globeImageUrl=""/>
+                            </div>
                         </div>
                     </div>
                 </div>
