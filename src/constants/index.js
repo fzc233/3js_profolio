@@ -132,11 +132,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        title: 'Portfolio v1',
+        desc: 'Build and Deploy a Fullstack Responsive Portfolio Website',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+            'A portfolio design by me, which is built with React.js, SCSS, Sanity. The portfolio is responsive and user-friendly, with a clean and modern design that highlights my skills and experience. And deployed to the Netlify',
+        href: 'https://github.com/fzc233/portfolio',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -171,11 +171,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+        title: 'AI-powered traffic monitoring system',
+        desc: 'Developed an AI-powered traffic monitoring system for the Guangzhou government to detect electric vehicle riders without helmets.',
         subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+            'Designed and implemented responsive display pages using HTML, CSS, and JavaScript, ensuring seamless interaction with the Flask (Python) backend for real-time video data processing.',
+        href: 'https://github.com/fzc233/yolov8Project',
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
@@ -208,11 +208,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+        title: 'Shopify clone',
+        desc: 'Independently built a Shopify clone using Next.js, Cloudinary AI, Clerk, and Stripe.',
         subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+            'Developed a Shopify clone with real-time product filtering, cart management, and secure payment integration, showcasing proficiency in Next.js, Cloudinary AI, Clerk, and Stripe.',
+        href: 'https://vercel.com/docs/integrations/ecommerce/shopify',
         texture: '/textures/project/project5.mp4',
         logo: '/assets/project-logo5.png',
         logoStyle: {
