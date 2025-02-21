@@ -58,11 +58,11 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+        title: 'Ryde App',
+        desc: 'Independently developed a responsive Ride App using React Native,PostgreSQL, TypeScript, Stripe, Tailwind',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            'Built a ride-hailing app with real-time driver-rider matching, utilizing Google Maps API for live route estimation, distance calculation, and optimized navigation, ensuring accurate fare computation and efficient ride coordination.',
+        href: 'https://github.com/fzc233/RydeApp',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
@@ -95,11 +95,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'Todo App - team project',
+        desc: 'Collaborated with a small team to develop a todo-app with a clear separation between frontend and backend.',
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+            'Developed a highly responsive frontend using React.js, implementing modular and reusable UI components for better maintainability and seamless user interactions. Ensured smooth communication with a separate backend API, enabling real-time task management and status updates.',
+        href: 'https://github.com/fzc233/Todo-App',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
