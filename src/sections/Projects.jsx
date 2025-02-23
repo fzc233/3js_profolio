@@ -1,5 +1,9 @@
 import {myProjects} from "../constants/index.js";
-import {useState} from "react";
+import {Suspense, useState} from "react";
+import {Canvas} from "@react-three/fiber";
+import {Center} from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader.jsx";
+import DemoCoumputer from "../components/DemoCoumputer.jsx";
 
 const Projects = () => {
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
@@ -57,12 +61,25 @@ const Projects = () => {
                                 <img src="/assets/left-arrow.png" alt="arrow" className="w-4 h-4"/>
                             </button>
                             <button className="arrow-btn bg-white/10 text-white px-4 py-2 rounded-lg
-                   backdrop-blur-md hover:bg-white/20 hover:shadow-lg transition-all duration-300" onClick={() => handleNavigation('previous')}>
+                   backdrop-blur-md hover:bg-white/20 hover:shadow-lg transition-all duration-300" onClick={() => handleNavigation('next')}>
                                 <img src="/assets/right-arrow.png" alt="arrow" className="w-4 h-4"/>
                             </button>
                         </div>
                     </div>
                 </div>
+                    <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+                        <Canvas>
+                            <ambientLight intensity={1} />
+                            <directionalLight position={[10, 10, 5]} intensity={1} />
+                            <Center>
+                                <Suspense fallback={<CanvasLoader />}>
+                                    <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
+                                        <DemoCoumputer />
+                                    </group>
+                                </Suspense>
+                            </Center>
+                        </Canvas>
+                    </div>
             </div>
         </section>
     )
