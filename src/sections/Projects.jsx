@@ -1,7 +1,7 @@
 import {myProjects} from "../constants/index.js";
 import {Suspense, useState} from "react";
 import {Canvas} from "@react-three/fiber";
-import {Center} from "@react-three/drei";
+import {Center, OrbitControls} from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import DemoCoumputer from "../components/DemoCoumputer.jsx";
 
@@ -78,6 +78,7 @@ const Projects = () => {
                                     </group>
                                 </Suspense>
                             </Center>
+                            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={true}/>
                         </Canvas>
                     </div>
             </div>
