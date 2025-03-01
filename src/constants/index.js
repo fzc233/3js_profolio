@@ -24,33 +24,33 @@ export const navLinks = [
 export const clientReviews = [
     {
         id: 1,
-        name: 'Henry',
-        position: 'Mobile App Developer',
-        img: 'assets/review1.png',
+        name: 'Chen',
+        position: 'Graduate Student',
+        img: 'assets/review11.png',
         review:
-            'Hes good',
+            'During our time at university, Conor consistently demonstrated outstanding problem-solving and analytical skills. He was the go-to person in group projects, ensuring that our applications were well-structured and functional. His ability to clearly communicate technical concepts made collaboration effortless, and he always brought a positive energy to the team.',
     },
     {
         id: 2,
         name: 'Ben',
         position: 'Software Engineer',
-        img: 'assets/review2.png',
+        img: 'assets/review12.png',
         review:
-            'His great',
+            'Conor is a highly skilled and dependable software engineer with a strong grasp of full-stack development. While working together, I was impressed by his ability to break down complex problems and implement scalable solutions efficiently. He is also a great collaborator, always ready to support his teammates and ensure smooth project execution."',
     },
     {
         id: 3,
         name: 'Haolin Yang',
         position: 'Software Engineer',
-        img: 'assets/review3.png',
+        img: 'assets/review13.png',
         review:
-            'I can’t say enough good things about Conor. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+            'I\'ve known Conor for years, and his passion for software development is truly inspiring. Whether he\'s experimenting with new frameworks or refining his architecture skills, he\'s always eager to push boundaries. Beyond his technical abilities, he\'s also a fantastic teammate—patient, open to feedback, and always willing to lend a hand.',
     },
     {
         id: 4,
         name: 'Mark',
         position: 'Project Manager',
-        img: 'assets/review4.png',
+        img: 'assets/review14.png',
         review:
             'Conor was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
     },
