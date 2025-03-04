@@ -25,18 +25,42 @@ const Contact = () => {
                    <p className="text-lg text-white-600 mt-3">Feel free to reach out with any questions or just to say
                        hello—my inbox is always open!</p>
                    <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
-                    <label className='space-y-3'>
-                        <span className="field-label">Full Name</span>
-                        <input
-                            type="text"
-                            name="name"
-                            value={form.name}
-                            onChange={handleChange}
-                            required
-                            className="field-input"
-                            placeholder="Your name"
-                        />
-                    </label>
+                       <label className='space-y-3'>
+                           <span className="field-label">Full Name</span>
+                           <input
+                               type="text"
+                               name="name"
+                               value={form.name}
+                               onChange={handleChange}
+                               required
+                               className="field-input"
+                               placeholder="Your name"
+                           />
+                       </label>
+                       <label className='space-y-3'>
+                           <span className="field-label">Email</span>
+                           <input
+                               type="email"
+                               name="email"
+                               value={form.email}
+                               onChange={handleChange}
+                               required
+                               className="field-input"
+                               placeholder="Your Email"
+                           />
+                       </label>
+                       <label className='space-y-3'>
+                           <span className="field-label">Full Name</span>
+                           <input
+                               type="text"
+                               name="name"
+                               value={form.name}
+                               onChange={handleChange}
+                               required
+                               className="field-input"
+                               placeholder="Your name"
+                           />
+                       </label>
                    </form>
                </div>
            </div>
