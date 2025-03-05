@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react'
-
+import  emailjs from '@emailjs/browser'
 const Contact = () => {
     const formRef =useRef();
     const [loading, setLoading] = useState(false)
@@ -10,10 +10,30 @@ const Contact = () => {
             message: ''
         }
     )
-    const handleChange = ()=> {
-
+    const handleChange = ({target:{name, value}})=> {
+        setForm({...form, [name]: value})
     }
-    const handleSubmit = ()=> {
+
+    //service_dsvd583
+    const handleSubmit = async (e)=> {
+        e.preventDefault()
+        setLoading(true)
+        try {
+            await emailjs.send(
+
+            )
+            setLoading(false)
+            alert('Your message has been sent. I will get back to you as soon as possible.')
+            setForm({
+                name: '',
+                email: '',
+                message: ''
+            })
+        }catch (error){
+            setLoading(false)
+            console.log(error)
+            alert('Something went wrong. Please try again.')
+        }
 
     }
     return (
@@ -50,17 +70,21 @@ const Contact = () => {
                            />
                        </label>
                        <label className='space-y-3'>
-                           <span className="field-label">Full Name</span>
-                           <input
-                               type="text"
-                               name="name"
-                               value={form.name}
+                           <span className="field-label">Your message</span>
+                           <textarea
+                               name="message"
+                               value={form.message}
                                onChange={handleChange}
                                required
+                               rows={5}
                                className="field-input"
-                               placeholder="Your name"
+                               placeholder="Hi, I wanna give u a job:） ..."
                            />
                        </label>
+                       <button className="field-btn" type="submit" disabled={loading}>
+                           {loading ? 'Sending...' : 'Send Msg'}
+                           <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow"/>
+                       </button>
                    </form>
                </div>
            </div>
