@@ -20,13 +20,15 @@ const Contact = () => {
         setLoading(true)
         try {
             await emailjs.send(
-
+                'service_dsvd583',
+                'template_6ufzvvk',
                 {
                     form_name:form.name,
                     to_name:'Conor',
                     from_email:form.email,
                     to_email:'isconor323@gmail.com',
                     message:form.message},
+                'JypcRKCyCmCxS2NDT'
             )
             setLoading(false)
             alert('Your message has been sent. I will get back to you as soon as possible.')

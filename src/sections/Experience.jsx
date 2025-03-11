@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import {Canvas} from "@react-three/fiber";
 import {workExperiences} from "../constants/index.js";
+import {OrbitControls} from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader.jsx";
 
 const Experience = () => {
     return (
@@ -10,7 +12,13 @@ const Experience = () => {
                 <div className="work-container">
                     <div className="work-canvas">
                         <Canvas>
-
+                            <ambientLight intensity={7}/>
+                            <spotLight position={[10,10,10]} angle={0.15} penumbra={1}/>
+                            <directionalLight position={[10,10,10]} intensity={1}/>
+                            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2}/>
+                            <Suspense fallback={<CanvasLoader/>}>
+                                <developer position-y={-3} scale={3} />
+                            </Suspense>
                         </Canvas>
                     </div>
                     <div className="work-content">
@@ -27,7 +35,6 @@ const Experience = () => {
                                         <p className="font-bold text-white-800">{name}</p>
                                         <p className="text-sm mb-5">{pos} -- {duration}</p>
                                         <p className="group-hover:text-white transition east-in-out duration-500">{title}</p>
-                                        <p>...</p>
                                     </div>
                                 </div>
                             ))}
