@@ -27,6 +27,7 @@ const Experience = () => {
                                         <p className="font-bold text-white-800">{name}</p>
                                         <p className="text-sm mb-5">{pos} -- {duration}</p>
                                         <p className="group-hover:text-white transition east-in-out duration-500">{title}</p>
+                                        <p>...</p>
                                     </div>
                                 </div>
                             ))}
