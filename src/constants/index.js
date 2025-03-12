@@ -24,7 +24,7 @@ export const navLinks = [
 export const clientReviews = [
     {
         id: 1,
-        name: 'Chen',
+        name: 'Haolin Yang',
         position: 'Graduate Student',
         img: 'assets/review11.png',
         review:
@@ -32,24 +32,24 @@ export const clientReviews = [
     },
     {
         id: 2,
-        name: 'Ben',
+        name: 'Zacks',
         position: 'Software Engineer',
-        img: 'assets/review12.png',
+        img: 'assets/ffj.jpg',
         review:
             'Conor is a highly skilled and dependable software engineer with a strong grasp of full-stack development. While working together, I was impressed by his ability to break down complex problems and implement scalable solutions efficiently. He is also a great collaborator, always ready to support his teammates and ensure smooth project execution."',
     },
     {
         id: 3,
-        name: 'Haolin Yang',
-        position: 'Software Engineer',
+        name: 'Henry Quan',
+        position: 'Mobile Engineer',
         img: 'assets/review13.png',
         review:
-            'I\'ve known Conor for years, and his passion for software development is truly inspiring. Whether he\'s experimenting with new frameworks or refining his architecture skills, he\'s always eager to push boundaries. Beyond his technical abilities, he\'s also a fantastic teammate—patient, open to feedback, and always willing to lend a hand.',
+            'Zechuan is an outstanding recent graduate with exceptional skills in project structure arrangement, clean code practices, and the emphasis on the single responsibility principle and design patterns. His work is organized and efficient and focuses on collaboration and maintenance of multiple projects. His dedication to these principles makes him an aspiring developer who will continue to reach further in any field he pursues.',
     },
     {
         id: 4,
         name: 'Mark',
-        position: 'Project Manager',
+        position: 'Front end developer',
         img: 'assets/review14.png',
         review:
             'Conor was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
@@ -63,7 +63,7 @@ export const myProjects = [
         subdesc:
             'Built a ride-hailing app with real-time driver-rider matching, utilizing Google Maps API for live route estimation, distance calculation, and optimized navigation, ensuring accurate fare computation and efficient ride coordination.',
         href: 'https://github.com/fzc233/RydeApp',
-        texture: '/textures/project/project1.mp4',
+        texture: '/textures/project/project6.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
             backgroundColor: '#2A1816',
@@ -136,7 +136,7 @@ export const myProjects = [
         desc: 'Build and Deploy a Fullstack Responsive Portfolio Website',
         subdesc:
             'A portfolio design by me, which is built with React.js, SCSS, Sanity. The portfolio is responsive and user-friendly, with a clean and modern design that highlights my skills and experience. And deployed to the Netlify',
-        href: 'https://github.com/fzc233/portfolio',
+        href: 'https://conorfei-portfolio.netlify.app/',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -277,7 +277,7 @@ export const workExperiences = [
         pos: 'Software Engineer Intern',
         duration: '2023.11 - 2024.02',
         title: "Developed an AI-powered traffic monitoring system for the Guangzhou government to detect electric vehicle riders without helmets.",
-        icon: '/assets/figma.svg',
+        icon: '/assets/cm.svg',
         animation: 'clapping',
     },
     {
